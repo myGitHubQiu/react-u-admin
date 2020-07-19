@@ -23,7 +23,10 @@ const Settings = () => lazy(() => import("@pages/User/Settings"));
 const Center = () => lazy(() => import("@pages/User/Center"));
 
 // 把自己写的组件引入到这里 并暴露  才真正的融入进这个react框架
+// 测试test组件
 const Test = () => lazy(() => import("@pages/Edu/Test"));
+// 课程分类管理subject组件
+const Subject = () => lazy(() => import("@pages/Edu/Subject"));
 
 export default {
   Admin,
@@ -40,5 +43,6 @@ export default {
   Teacher,
   Settings,
   Center,
-  Test
+  Test,
+  Subject
 };

@@ -8,7 +8,7 @@ const {
 
 const { resolve } = require("path");
 
-function resolvePath(path) {
+function resolvePath (path) {
   return resolve(__dirname, "src", path);
 }
 
@@ -23,7 +23,7 @@ module.exports = override(
   addLessLoader({
     javascriptEnabled: true,
     modifyVars: {
-      "@primary-color": "#1DA57A",
+      "@primary-color": "#A49BA0",
     },
   }),
   // 添加装饰器语法
